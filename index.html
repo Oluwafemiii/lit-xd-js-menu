@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>goGoals Low Fidelity Prototype</title>
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
+      <nav id="nav-overlay">
+        <img src="./images/close.svg" alt="close-icon" class="close-btn" id="close-menu">
+        <ul>
+            <li>
+                <a href="#" > Home </a>
+                <span>your goals, our passion.</span>
+            </li>
+
+            <li>
+              <a href="#" > About </a>
+              <span>what we do, how we do it.</span>
+            </li>
+
+            <li>
+              <a href="#" > Services </a>
+              <span>our approach, and what you'd gain.</span>
+            </li>
+
+            <li>
+              <a href="#" > Contact </a>
+              <span>reach out to us, we reply mails.</span>
+            </li>
+
+        </ul>
+
+      </nav>
+
+      <header>
+          <a href="#" class="logo">goGoals</a>
+          <img src="./images/menu.svg" alt="menu-icon" class="menu-btn" id="open-menu">
+
+      </header>
+      
+      <section>
+        <h1>Hello Awesome!</h1>
+      </section>
+
+  <script>
+      var overlay = document.getElementById('nav-overlay');
+      var menu = document.getElementById('close-menu');
+
+      document.getElementById('open-menu').addEventListener('click', function() {
+          overlay.classList.add('show-menu');
+      });
+
+      document.getElementById('close-menu').addEventListener('click', function() {
+          overlay.classList.remove('show-menu');
+      });
+  </script>
+
+  </body>
+</html>
